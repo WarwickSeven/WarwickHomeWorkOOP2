@@ -1,4 +1,4 @@
-//Lesson B task 2
+//Lesson B task 1
 
 #include <iostream>
 
