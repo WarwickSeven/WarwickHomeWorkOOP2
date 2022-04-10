@@ -20,20 +20,17 @@ public:
 
 class Apple : public Fruit {
 public:
-    Apple(std::string color = "Default", std::string name = "Apple") : Fruit(name, color) {
-    }
+    Apple(std::string color = "red", std::string name = "Apple") : Fruit(name, color) { }
 };
 
 class Banana : public Fruit {
 public:
-    Banana(std::string name = "Banana", std::string color = "Yellow") : Fruit(name, color) {
-    }
+    Banana() : Fruit("Banana", "Yellow") { }
 };
 
 class GrannySmith : public Apple {
 public:
-    GrannySmith(std::string name = "GrannySmith", std::string color = "Green") : Apple(color, name) {
-    }
+    GrannySmith() : Apple("Green", "GrannySmith") { }
 };
 
 int main()
